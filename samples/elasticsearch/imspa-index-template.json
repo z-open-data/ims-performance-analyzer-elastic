@@ -1,0 +1,21 @@
+{
+  "index_patterns": ["imspa_*"],
+  "template": {
+    "settings": {
+      "lifecycle": {
+        "name": "imspa-ilm-policy"
+      }
+    },
+    "mappings": {
+      "dynamic_templates": [ {
+        "strings": {
+          "match_mapping_type": "string",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      } ]
+    }
+  } ,
+  "data_stream": { }
+}

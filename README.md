@@ -1,1 +1,1 @@
-# ims-performance-analyzer-elastic
+See the [documentation](https://z-open-data.github.io/ims-performance-analyzer-elastic/)

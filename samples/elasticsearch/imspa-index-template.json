@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["imspa_*"],
+  "index_patterns": ["imspa-*"],
   "template": {
     "settings": {
       "lifecycle": {

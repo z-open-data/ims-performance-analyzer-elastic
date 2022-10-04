@@ -136,6 +136,7 @@ if [ "$($CURL $ELASTICSEARCH_URI/_all)" == "{}" ]; then
       exit 1
     fi
     #unzip sample data
+    echo "* Extracting sample data to "$SAMPLE_DATA_PATH
     unzip -q $SAMPLE_DATA_PATH*.zip -d $SAMPLE_DATA_PATH || exit 1
     # load sample data
     for file in $SAMPLE_DATA_PATH*.jsonl; do

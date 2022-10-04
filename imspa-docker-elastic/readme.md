@@ -16,7 +16,7 @@ The container provides a quick and easy way to try the dashboards in a self-cont
 
 Download and install Docker for your platform.
 
-Execute bash script to copy all necessary objects to coresponding folders:
+Execute `copy_objects.sh` script to copy all necessary objects to coresponding folders:
 
 ```sh
 bash copy_objects.sh

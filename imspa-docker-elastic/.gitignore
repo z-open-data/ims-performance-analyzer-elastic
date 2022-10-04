@@ -1,0 +1,7 @@
+release/
+
+readme.html
+readme.pdf
+
+**/*~
+clean_before_push.sh

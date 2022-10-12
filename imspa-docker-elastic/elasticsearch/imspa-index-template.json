@@ -1,0 +1,16 @@
+{
+  "index_patterns": ["imspa-*"],
+  "template": {
+    "mappings": {
+      "dynamic_templates": [ {
+        "strings": {
+          "match_mapping_type": "string",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      } ]
+    }
+  } ,
+  "data_stream": { }
+}

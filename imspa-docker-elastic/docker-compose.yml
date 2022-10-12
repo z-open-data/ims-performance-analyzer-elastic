@@ -1,0 +1,17 @@
+version: "3"
+services:
+  elastic:
+    image: imspa-elastic
+    container_name: imspa-elastic
+    ports:
+      - "15601:5601"
+      - "19200:9200"
+      - "15046:5046"
+    volumes:
+      - elastic-data:/var/lib/elasticsearch
+    ulimits:
+      nofile:
+        soft: "65535"
+        hard: "65535"
+volumes:
+  elastic-data:

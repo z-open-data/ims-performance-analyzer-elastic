@@ -14,9 +14,9 @@ The container provides a quick and easy way to try the dashboards in a self-cont
 
 [Docker](https://www.docker.com/products/overview) is the only prerequisite.
 
-Download and install Docker for your platform.
+Download and install Docker for your platform ([guide for setting up Docker Desktop for Windows with WSL 2](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers)).
 
-Execute `copy_objects.sh` script to copy all necessary objects to coresponding folders:
+Execute `copy_objects.sh` script to copy all necessary objects to corresponding folders:
 
 ```sh
 bash copy_objects.sh
@@ -60,7 +60,7 @@ This `docker run` command:
 
 If container fails to start with the message `max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144]` it means that the host's limits on mmap counts must be set to at least 262144.
 
-Enter the following command to adjust mmap counts:
+Enter the following command to adjust mmap counts (in WSL):
 
 ```sh
 sudo sysctl -w vm.max_map_count=262144
